@@ -53,199 +53,251 @@ Businesses often face challenges in determining which product lines drive the hi
   
 * Is there any correlation between the number of tags and product rating?
 
+### Key Datasets and Methodologies
 
-1.3 Key Datasets and Methodologies
-The analysis uses sales and inventory data from internal systems. Key Excel tools and functions include:
+### Datasets Used
+The analysis uses sales and inventory data from internal systems which include product categories, pricing, customer ratings, stock quantity, and other factors influence business outcomes.
 
-Pivot Tables for summarization.
+#### Methods Used
+The analysis utilizes Microsoft Excel tools, such as: 
 
-Statistical functions such as SUMIF, COUNTIF, SUMIFS, COUNTIFS.
+•	Pivot Tables for data summarization. 
 
-CONCATENATE and SUBSTITUTE for text processing.
+•	Data Cleaning Techniques such removing duplicate and blank space and empty rows to ensure data quality. 
 
-Dashboards and visualization tools like bar charts, pie charts, and column graphs.
+•	Visualizations and Dashboard (charts and graphs) to illustrate trends.
+## Story of Data
 
-2. Story of Data
-2.1 Data Source
-The dataset was collected from the company’s internal retail and product management system, capturing data from various global regions.
+### Data Source
 
-2.2 Data Collection Process
-The data was logged using automated tools integrated into point-of-sale and warehouse management systems, supplemented by monthly updates from regional offices.
+Platform: Kaggle.com
 
-2.3 Data Structure
-Rows: Each row represents a unique product.
+Nature: Public, open-source
 
-Columns: Include fields such as Category, Product Name, Price, Rating, Stock Quantity, Warranty Period, Size, Color, and Month of review or sale.
+### Data Collection Process
 
-2.4 Important Features
-Product Category: Classifies items (Clothing, Electronics, Home Appliances).
+Although the data was obtained in a structured CSV format, it was originally compiled through aggregated records of product listings, customer reviews, and inventory levels. The dataset simulates real-world commercial data, offering practical dimensions for analysis.
 
-Price: Reflects consumer value and business positioning.
+### Data Structure
 
-Rating: Indicates customer satisfaction.
+Each row in the dataset represents a single product entry, while columns represent various product features:
 
-Color/Size: Consumer preference indicator.
+Categorical variables: Category, Color, Size, Month
 
-Warranty: May influence perceived value.
+Numerical variables: Price, Rating, Stock Quantity, Warranty Period
 
-Stock Quantity: Inventory availability.
+### Key Features & Significance
 
-2.5 Data Limitations
-Limited granularity on regional sales.
+Category: Helps compare performance across product types
 
-Some missing values in warranty and ratings.
+Price: Indicates perceived value or cost positioning
 
-Monthly data available for only three months.
+Rating: Reflects customer satisfaction
 
-3. Data Splitting and Preprocessing
-3.1 Data Cleaning
+Stock Quantity: Impacts availability and sales planning
+
+Warranty: Influences buyer trust and product reliability perception
+
+Color/Size: Useful in customer preference segmentation
+
+### Data Limitations & Biases
+
+The dataset may not reflect real-time trends as it is static and simulated.
+
+Certain attributes had missing values, which were addressed through Excel’s imputation techniques.
+
+Some data may reflect synthetic generation methods, so while patterns are realistic, they may not directly translate to live business environments.
+
+## Data Splitting and Preprocessing
+
+### Data Cleaning
+
 Removed duplicates and null values.
 
 Standardized format for colors and product names.
 
-3.2 Handling Missing Values
+### Handling Missing Values
+
 Used average imputation for missing ratings and warranty fields to maintain integrity without deleting records.
 
-3.3 Data Transformations
+### Data Transformations
+
 Created new fields such as “Price by Rating” and “Average Rating by Category”.
 
-Used SUBSTITUTE to clean textual inconsistencies.
+### Data Splitting 
 
-Used CONCATENATE for combining size and color for composite analysis.
-
-3.4 Data Splitting
 Dependent variables: Price, Rating.
 
 Independent variables: Category, Stock, Warranty, Month, Color/Size.
 
-3.5 Industry Context and Stakeholders
-Industry: Retail and Consumer Goods.
+### Industry Context
+The e-commerce industry has experienced exponential growth over the past decade, driven by digital transformation, increased internet penetration, and changing consumer preferences toward online shopping. In this highly competitive and fast-moving environment, data-driven decision-making has become essential for maintaining market relevance and improving operational efficiency.
 
-Stakeholders: Sales team, Inventory Managers, Product Developers, Marketing Department.
+### Relevance to Analysis
+This analysis provides insights that are particularly relevant for retailers, inventory managers, marketing teams, and product strategists within the e-commerce sector. Understanding how product attributes such as price, rating, warranty, and stock levels interact allows businesses to:
 
-4. Pre-Analysis
-4.1 Key Trends Identified
-Home Appliances are the highest priced category on average ($258.8).
+* Optimize product offerings based on customer satisfaction and perceived value
 
-Clothing holds the best average product rating (3.02).
+* Improve inventory turnover rates by identifying overstocked or underperforming items
 
-Blue/Medium sized products receive the best feedback (3.015 rating).
+* Enhance pricing strategies to align with customer expectations and competitor benchmarks
 
-4.2 Potential Correlations
-Products with a higher stock range (81–100) are generally rated better.
+* Detect seasonal trends in product demand, helping with promotion and stocking decisions
 
-Longer warranties are associated with slightly higher prices.
+### Value to the Industry
 
-4.3 Initial Insights
-Ratings peak in March, suggesting potential seasonal or campaign influence.
+By using Microsoft Excel's analytical capabilities (PivotTables, formulas, charts), the analysis enables decision-makers to:
 
-Electronics are competitive in pricing but fall behind in customer satisfaction.
+* Translate raw product data into actionable intelligence
 
-5. In-Analysis
-5.1 Unconfirmed Insights
-High-priced products may drive customer expectations and lower ratings unless supported by warranty and quality.
+* Create visually intuitive dashboards to monitor performance metrics
 
-Some variations like Red/Small also perform well, suggesting size and color influence perception.
+* Develop recommendations for strategic planning such as which products to scale, discontinue, or discount
 
-5.2 Recommendations
-Increase inventory for best-performing variants (e.g., Blue/Medium clothing).
+* Identify opportunities for cross-selling and bundling based on related attributes like warranty and price range
 
-Bundle extended warranties with electronics to improve perceived value.
+### Stakeholders
 
-Monitor high-price items (e.g., monitors) for return rates and satisfaction trends.
+Marketing Teams: Use insights to tailor campaigns to high-performing product categories
 
-5.3 Excel Techniques Used
+Inventory Managers: Monitor and balance stock levels across regions and time periods
+
+Product Development: Focus on features that correlate with high customer ratings
+
+Executives & Business Analysts: Leverage summarized insights to make informed investment or expansion decisions
+
+## Pre-Analysis
+
+### Key Trends Identified
+
+* Home Appliances are the highest priced category on average ($258.8).
+
+* Clothing holds the best average product rating (3.02).
+
+* Blue/Medium sized products receive the best feedback (3.015 rating).
+
+### Potential Correlations
+
+* Products with a higher stock range (81–100) are generally rated better.
+
+* Longer warranties are associated with slightly higher prices.
+
+### Initial Insights
+* Ratings peak in March, suggesting potential seasonal or campaign influence.
+
+* Electronics are competitive in pricing but fall behind in customer satisfaction.
+
+## In-Analysis
+
+### Unconfirmed Insights
+
+* High-priced products may drive customer expectations and lower ratings unless supported by warranty and quality.
+
+* Some variations like Red/Small also perform well, suggesting size and color influence perception.
+
+### Recommendations
+
+* Increase inventory for best-performing variants (e.g., Blue/Medium clothing).
+
+* Bundle extended warranties with electronics to improve perceived value.
+
+* Monitor high-price items (e.g., monitors) for return rates and satisfaction trends.
+
+### Excel Techniques Used
+
 Pivot Tables: Summarizing average prices and ratings.
 
-Formulas:
+## Post-Analysis and Insights
 
-=SUMIF(Category, "Clothing", Price)
+### Key Findings
 
-=COUNTIFS(Rating, ">3", Warranty, ">1")
+* Best-reviewed category: Clothing (3.02 rating).
 
-=SUBSTITUTE(Product, " ", "_")
+* Highest average price: Home Appliances ($258.8).
 
-=CONCATENATE(Color, "/", Size)
+* Most expensive product: Monitor ($259.12).
 
-6. Post-Analysis and Insights
-6.1 Key Findings
-Best-reviewed category: Clothing (3.02 rating).
+* Top-rated variation: Blue/Medium (3.015).
 
-Highest average price: Home Appliances ($258.8).
+* Best month: March (3.048 average rating).
 
-Most expensive product: Monitor ($259.12).
-
-Top-rated variation: Blue/Medium (3.015).
-
-Best month: March (3.048 average rating).
-
-6.2 Comparison with Initial Findings
+### Comparison with Initial Findings
 Initial expectations suggested Electronics might dominate. However, Clothing products outperformed others in customer satisfaction despite lower pricing.
 
-7. Data Visualizations & Charts
-7.1 Visuals Included
-Bar Charts: Price by category, product rating by stock, color/size ratings.
+## Data Visualizations & Charts
 
-Pie Chart: Average rating by category.
+![Dashboard6](https://github.com/user-attachments/assets/92303ef8-0283-4e62-acab-6f137461b020)
 
-Column Charts: Price by warranty, rating by month.
+### Link to the Excel documents and Dashboard
 
-Dashboard Highlights: Key indicators and best-performing segments.
+https://docs.google.com/spreadsheets/d/1OYkcj3w4L03QLAZE34MTSFMl6sEyRMK0/edit?usp=drive_link&ouid=104478848167416604596&rtpof=true&sd=true
 
-7.2 Explanation of Visualizations
+### Explanation of Visualizations
+
 Each visual offers quick insights:
 
 Clothing’s consistent performance is seen across price, rating, and warranty data.
 
 Inventory levels strongly correlate with better product reviews.
 
-8. Recommendations and Observations
-8.1 Actionable Insights
-Increase production of high-rated combinations (Clothing, Blue/Medium).
+## Recommendations and Observations
 
-Reprice underperforming products in the Electronics category.
+### Actionable Insights
 
-Reassess stock levels for low-rated products with high inventory.
+* Increase production of high-rated combinations (Clothing, Blue/Medium).
 
-8.2 Optimizations
-Shift marketing spend toward best-rated months and categories.
+* Reprice underperforming products in the Electronics category.
 
-Extend warranty coverage on mid-tier products to raise perceived value.
+* Reassess stock levels for low-rated products with high inventory.
 
-8.3 Unexpected Outcomes
-March performed exceptionally well across all categories; requires further investigation into marketing actions during that period.
+### Optimizations
 
-9. Conclusion
-9.1 Key Learnings
-Product attributes like size, color, and warranty period significantly affect customer satisfaction.
+* Shift marketing spend toward best-rated months and categories.
 
-Clothing products offer the best balance between affordability and customer rating.
+* Extend warranty coverage on mid-tier products to raise perceived value.
 
-9.2 Limitations
-Limited time span of analysis (3 months).
+### Unexpected Outcomes
 
-Dataset does not include geographic segmentation or returns data.
+* March performed exceptionally well across all categories; requires further investigation into marketing actions during that period.
 
-9.3 Future Research
-Explore integration of customer sentiment (reviews).
+## Conclusion
 
-Analyze year-over-year performance for long-term trends.
+### Key Findings
 
-Incorporate sales volume for deeper profitability insights.
+* Product attributes like size, color, and warranty period significantly affect customer satisfaction.
 
-10. References & Appendices
-References
+* Clothing products offer the best balance between affordability and customer rating.
+
+### Limitations
+
+* Limited time span of analysis (3 months).
+
+* Dataset does not include geographic segmentation or returns data.
+
+### Future Research
+
+* Explore integration of customer sentiment (reviews).
+
+* Analyze year-over-year performance for long-term trends.
+
+* Incorporate sales volume for deeper profitability insights.
+
+## References & Appendices
+
+### References
+
 Internal Sales and Inventory Systems
 
 Microsoft Excel Documentation
 
 Product Management Records
 
-Appendices
-Appendix A: Full Pivot Table Output
+### Appendices
 
-Appendix B: Excel Formulas Used
+* Appendix A: Full Pivot Table Output
 
-Appendix C: Raw Dataset (sanitized)
+* Appendix B: Excel Formulas Used
 
-Appendix D: Screenshot of Final Dashboard
+* Appendix C: Raw Dataset (sanitized)
+
+* Appendix D: Screenshot of Final Dashboard
