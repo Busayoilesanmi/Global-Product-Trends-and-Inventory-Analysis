@@ -1,4 +1,5 @@
-# Global-Product-Trends-and-Inventory-Analysis
+# Global Product Trends and Inventory-Analysis
+
 [Introduction](#Introduction)
 
 [Objective](#Objective)
