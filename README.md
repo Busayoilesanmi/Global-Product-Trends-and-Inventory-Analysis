@@ -35,15 +35,23 @@ ratings, inventory levels, and other variables such as color, size, and warranty
 
 Businesses often face challenges in determining which product lines drive the highest returns and customer satisfaction. This analysis seeks to:
 
-*Which product categories get the best customer reviews?
-Which product categories are the most expensive?
-Are higher-rated products more expensive?
-Does a longer warranty increase price?
-Do certain colors or sizes get higher ratings?
-Are newer products getting better reviews?
-Which specific products are the most expensive?
-Does stock quantity impact product rating?
-Is there any correlation between the number of tags and product rating?
+* Which product categories get the best customer reviews?
+  
+* Which product categories are the most expensive?
+  
+* Are higher-rated products more expensive?
+
+* Does a longer warranty increase price?
+  
+* Do certain colors or sizes get higher ratings?
+  
+* Are newer products getting better reviews?
+
+* Which specific products are the most expensive?
+  
+* Does stock quantity impact product rating?
+  
+* Is there any correlation between the number of tags and product rating?
 
 
 1.3 Key Datasets and Methodologies
