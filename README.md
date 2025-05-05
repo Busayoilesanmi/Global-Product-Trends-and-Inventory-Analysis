@@ -1,4 +1,4 @@
-# Global Product Trends and Inventory-Analysis
+# Global Product Trends and Inventory Analysis
 
 [Introduction](#Introduction)
 
@@ -233,13 +233,63 @@ Initial expectations suggested Electronics might dominate. However, Clothing pro
 
 https://docs.google.com/spreadsheets/d/1OYkcj3w4L03QLAZE34MTSFMl6sEyRMK0/edit?usp=drive_link&ouid=104478848167416604596&rtpof=true&sd=true
 
-### Explanation of Visualizations
+### Explanation of Visualizations on the Dashboard
 
-Each visual offers quick insights:
+1. Bar Chart: Average Customer Rating by Product Category
+   
+Purpose: This chart shows how well customers rate products across different categories (e.g., Electronics, Clothing, Home Appliances).
 
-Clothing’s consistent performance is seen across price, rating, and warranty data.
+Insight: It helps identify which product categories consistently meet or exceed customer expectations. For example, Electronics may have a lower average rating, suggesting a need for quality improvement.
 
-Inventory levels strongly correlate with better product reviews.
+2. Line Chart: Monthly Sales Trend
+   
+Purpose: Displays sales volume over time, segmented by month.
+
+Insight: Useful for spotting seasonality or sales spikes. A visible increase in November and December could indicate holiday-driven purchases, helping to plan stock and promotions accordingly.
+
+3. Pie Chart: Stock Distribution by Product Category
+   
+Purpose: Visualizes the proportion of stock allocated to each product category.
+
+Insight: Helps identify overstocked or understocked categories. If Clothing takes up 50% of total stock but contributes only 30% to revenue, rebalancing may be needed.
+
+4. Pivot Table: Sales Performance by Region and Category
+   
+Purpose: Breaks down sales data by region and product category.
+
+Insight: Helps pinpoint which regions perform best for specific product types. For instance, Home Appliances may perform better in urban areas compared to rural regions.
+
+5. Scatter Plot: Price vs. Customer Rating
+   
+Purpose: Plots the relationship between product price and customer rating.
+
+Insight: Useful for identifying whether more expensive products lead to higher satisfaction. A weak correlation may suggest pricing strategy needs to be re-evaluated.
+
+6. KPI Cards (Key Performance Indicators)
+   
+Metrics Shown:
+
+Total Sales
+
+Average Rating
+
+Top-Selling Product
+
+Total Stock Value
+
+Insight: These are quick-glance performance indicators providing a high-level summary of business health and product performance.
+
+7. Heat Map: Monthly Sales by Category
+   
+Purpose: Uses color coding to represent sales density per month for each category.
+
+Insight: Makes it easy to spot which months have low or high activity. Bright green indicates peak months; red indicates underperformance.
+
+8. Column Chart: Warranty Duration by Category
+   
+Purpose: Compares average warranty periods across product categories.
+
+Insight: Useful for assessing post-sale value and building trust with customers. Longer warranties may positively impact customer satisfaction.
 
 ## Recommendations and Observations
 
@@ -287,11 +337,11 @@ Inventory levels strongly correlate with better product reviews.
 
 ### References
 
-Internal Sales and Inventory Systems
+Dataset - https://www.kaggle.com/datasets/keyushnisar/global-product-inventory-dataset-2025
 
-Microsoft Excel Documentation
+Microsoft Excel Documentation- https://docs.google.com/spreadsheets/d/1OYkcj3w4L03QLAZE34MTSFMl6sEyRMK0/edit?usp=drive_link&ouid=104478848167416604596&rtpof=true&sd=true
 
-Product Management Records
+Screenshot- https://drive.google.com/file/d/11YICaeHRXngziTTYYOyp3jIOzxuWoX8f/view?usp=drive_link
 
 ### Appendices
 
