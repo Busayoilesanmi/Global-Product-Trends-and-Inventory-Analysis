@@ -29,17 +29,22 @@ pricing, customer ratings, stock quantity, and other factors influence business 
 ### Objective of the Project
 
 This project aims to evaluate and understand global product performance trends in 2023 using Microsoft Excel. The objective is to identify how product categories, pricing, customer 
-
 ratings, inventory levels, and other variables such as color, size, and warranty period influence business performance.
 
-1.2 Problem Being Addressed
+### Problem Being Addressed
+
 Businesses often face challenges in determining which product lines drive the highest returns and customer satisfaction. This analysis seeks to:
 
-Identify top-performing product categories.
+*Which product categories get the best customer reviews?
+Which product categories are the most expensive?
+Are higher-rated products more expensive?
+Does a longer warranty increase price?
+Do certain colors or sizes get higher ratings?
+Are newer products getting better reviews?
+Which specific products are the most expensive?
+Does stock quantity impact product rating?
+Is there any correlation between the number of tags and product rating?
 
-Determine which product attributes contribute to higher ratings and pricing.
-
-Guide inventory management decisions based on customer feedback and stock data.
 
 1.3 Key Datasets and Methodologies
 The analysis uses sales and inventory data from internal systems. Key Excel tools and functions include:
