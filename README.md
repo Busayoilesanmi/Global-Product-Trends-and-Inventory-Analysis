@@ -57,7 +57,9 @@ Businesses often face challenges in determining which product lines drive the hi
 ### Key Datasets and Methodologies
 
 ### Datasets Used
-The analysis uses sales and inventory data from internal systems which include product categories, pricing, customer ratings, stock quantity, and other factors influence business outcomes.
+The analysis uses sales and inventory data from kaggle.com which include product categories, pricing, customer ratings, stock quantity, and other factors influence business outcomes.
+
+Link to the data used: https://www.kaggle.com/datasets/keyushnisar/global-product-inventory-dataset-2025
 
 #### Methods Used
 The analysis utilizes Microsoft Excel tools, such as: 
